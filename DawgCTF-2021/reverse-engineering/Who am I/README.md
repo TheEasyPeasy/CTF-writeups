@@ -16,7 +16,7 @@ In a way, yes, but the switch was very simple, fortunately. <br/>
 ![Alt text](https://i.imgur.com/IzrTSRT.png "Title")
 
 
-While browsing the code in general, I saw some external calli like calloc etc. But my attention was caught by "getpid" <br/>
+While browsing the code in general, I saw some external calli like calloc etc. But my attention was caught by <b>getPid</b> <br/>
 <b>[ebp+pidNumber]</b> is my local var that i named before, when i saw that this function read PID number from arg[1], and then named function readPid
 
 ![Alt text](https://i.imgur.com/VqQ5d2q.png "Title")
@@ -37,7 +37,7 @@ it compare our PID with input arg[1] if it's same just jump, we can circumvent i
 
 I will show you how to do it with IDA
 
-![Alt text](https://i.imgur.com/W9IzzLh.png "Title")
+![Alt text](https://i.imgur.com/MsbeGBw.png "Title")
 
 And change
 ```assembly
